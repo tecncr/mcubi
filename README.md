@@ -1,43 +1,72 @@
-# BlueBuild Template &nbsp; [![bluebuild build badge](https://github.com/blue-build/template/actions/workflows/build.yml/badge.svg)](https://github.com/blue-build/template/actions/workflows/build.yml)
+# mcubi
 
-See the [BlueBuild docs](https://blue-build.org/how-to/setup/) for quick setup instructions for setting up your own repository based on this template.
+[![mcubi build badge](https://github.com/tecncr/mcubi/actions/workflows/build.yml/badge.svg)](https://github.com/tecncr/mcubi/actions/workflows/build.yml)
 
-After setup, it is recommended you update this README to describe your custom image.
+My custom Universal Blue images 
 
-## Installation
-
-> **Warning**  
-> [This is an experimental feature](https://www.fedoraproject.org/wiki/Changes/OstreeNativeContainerStable), try at your own discretion.
+## Rebasing to mcubi
 
 To rebase an existing atomic Fedora installation to the latest build:
 
-- First rebase to the unsigned image, to get the proper signing keys and policies installed:
+### Rebasing to the unsigned image, to get the proper signing keys and policies installed:
+
+- For mcubi-bluefin:
+
   ```
-  rpm-ostree rebase ostree-unverified-registry:ghcr.io/blue-build/template:latest
+  rpm-ostree rebase ostree-unverified-registry:ghcr.io/tecncr/mcubi-bluefin:latest
   ```
-- Reboot to complete the rebase:
+
+- For mcubi-bluefin-dx:
+
+  ```
+  rpm-ostree rebase ostree-unverified-registry:ghcr.io/tecncr/mcubi-bluefin-dx:latest
+  ```
+
+- For mcubi-bluefin-dx-nvidia:
+
+  ```
+  rpm-ostree rebase ostree-unverified-registry:ghcr.io/tecncr/mcubi-bluefin-dx-nvidia:latest
+  ```
+
+### Reboot to complete the rebase
+
   ```
   systemctl reboot
   ```
-- Then rebase to the signed image, like so:
+
+### Then rebase to the signed image, like so:
+
+- For mcubi-bluefin:
+
   ```
-  rpm-ostree rebase ostree-image-signed:docker://ghcr.io/blue-build/template:latest
+  rpm-ostree rebase oostree-image-signed:docker://ghcr.io/tecncr/mcubi-bluefin:latest
   ```
-- Reboot again to complete the installation
+
+- For mcubi-bluefin-dx:
+
+  ```
+  rpm-ostree rebase ostree-image-signed:docker://ghcr.io/tecncr/mcubi-bluefin-dx:latest
+  ```
+
+- For mcubi-bluefin-dx-nvidia:
+
+  ```
+  rpm-ostree rebase ostree-image-signed:docker://ghcr.io/tecncr/mcubi-bluefin-dx-nvidia:latest
+  ```
+
+### Reboot again to complete the rebase
+
   ```
   systemctl reboot
   ```
 
-The `latest` tag will automatically point to the latest build. That build will still always use the Fedora version specified in `recipe.yml`, so you won't get accidentally updated to the next major version.
+The `latest` tag will automatically point to the latest build. That build will still always use the Fedora version specified in the files located at the `recipes` directory.
 
-## ISO
-
-If build on Fedora Atomic, you can generate an offline ISO with the instructions available [here](https://blue-build.org/learn/universal-blue/#fresh-install-from-an-iso). These ISOs cannot unfortunately be distributed on GitHub for free due to large sizes, so for public projects something else has to be used for hosting.
 
 ## Verification
 
 These images are signed with [Sigstore](https://www.sigstore.dev/)'s [cosign](https://github.com/sigstore/cosign). You can verify the signature by downloading the `cosign.pub` file from this repo and running the following command:
 
 ```bash
-cosign verify --key cosign.pub ghcr.io/blue-build/template
+cosign verify --key cosign.pub ghcr.io/tecncr/mcubi
 ```
