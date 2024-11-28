@@ -1,0 +1,81 @@
+name: mcubi-bluefin
+description: A custom bluefin image by @tecncr
+base-image: ghcr.io/ublue-os/bluefin
+image-version: latest
+modules:
+  - type: rpm-ostree
+    repos:
+      - https://negativo17.org/repos/fedora-multimedia.repo
+  - type: akmods
+    base: main
+    install:
+      - evdi
+  - type: rpm-ostree
+    install:
+      - displaylink
+      - mozilla-fira-sans-fonts
+      - papirus-icon-theme
+      - papirus-icon-theme-light
+      - papirus-icon-theme-dark
+      - epapirus-icon-theme
+      - usbguard
+      - usbguard-dbus
+      - usbguard-tools
+      - usbguard-selinux
+      - telnet
+      - nmap
+      - netcat
+      - efivar
+      - efivar-libs
+      - smartmontools
+  - type: fonts
+    fonts:
+      nerd-fonts:
+        - FiraCode
+        - Hack
+        - JetBrainsMono
+      google-fonts:
+        - Fira Sans
+        - Roboto
+        - Roboto Mono
+        - Roboto Slab
+        - Open Sans
+        - Montserrat
+        - Lato
+        - Poppins
+        - Inter
+        - Nunito
+        - Oswald
+        - Raleway
+        - Playfair Display
+        - EB Garamond
+        - Playfair Display
+        - DM Sans
+        - Quicksand
+        - IBM Plex Sans
+        - Red Hat Display
+  - type: files
+    files:
+      - source: system
+        destination: /
+  - type: script
+    snippets:
+      - "curl -sL https://ncastillo.xyz/wallpaper.png -o /usr/share/backgrounds/wallpaper.png"
+    scripts:
+      - papirus-folders.sh
+      - suvctl.sh
+  - type: gnome-extensions
+    install:
+      - 615 # AppIndicator and KStatusNotifierItem Support
+      - 779 # Clipboard Indicator
+      - 1414 # Unblank lock screen
+      - 3396 # Color Picker
+      - 6433 # App menu is back
+    uninstall:
+      - 3193 # Blur my Shell
+      - 4451 # Logo Menu
+      - 6139 # Tailscale QS
+  - type: gschema-overrides
+    include:
+      - modifications.gschema.override
+  - type: signing
