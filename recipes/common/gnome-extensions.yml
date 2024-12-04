@@ -1,0 +1,13 @@
+# yaml-language-server: $schema=https://schema.blue-build.org/module-list-v1.json
+modules:
+  - type: gnome-extensions
+    install:
+      - "615" # AppIndicator and KStatusNotifierItem Support
+      - "779" # Clipboard Indicator
+      - "1414" # Unblank lock screen
+      - "3396" # Color Picker
+      - "6433" # App menu is back
+    uninstall:
+      - "3193" # Blur my Shell
+      - "4451" # Logo Menu
+      - "6139" # Tailscale QS

@@ -1,0 +1,8 @@
+# yaml-language-server: $schema=https://schema.blue-build.org/module-list-v1.json
+modules:
+  - type: script
+    snippets:
+      - "curl -sL https://ncastillo.xyz/wallpaper.png -o /usr/share/backgrounds/wallpaper.png"
+    scripts:
+      - papirus-folders.sh
+      - suvctl.sh
