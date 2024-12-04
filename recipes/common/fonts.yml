@@ -1,0 +1,27 @@
+# yaml-language-server: $schema=https://schema.blue-build.org/module-list-v1.json
+modules:
+  - type: fonts
+    fonts:
+      nerd-fonts:
+        - FiraCode
+        - Hack
+        - JetBrainsMono
+      google-fonts:
+        - Roboto
+        - Roboto Mono
+        - Roboto Slab
+        - Open Sans
+        - Montserrat
+        - Lato
+        - Poppins
+        - Inter
+        - Nunito
+        - Oswald
+        - Raleway
+        - Playfair Display
+        - EB Garamond
+        - Playfair Display
+        - DM Sans
+        - Quicksand
+        - IBM Plex Sans
+        - Red Hat Display
