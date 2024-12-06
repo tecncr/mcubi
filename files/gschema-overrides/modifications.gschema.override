@@ -16,6 +16,7 @@ secondary-color='FFFFFF'
 accent-color="slate"
 clock-format="24h"
 color-scheme="prefer-dark"
+cursor-theme="Yaru"
 document-font-name="Cantarell 12"
 enable-hot-corners=true
 clock-show-weekday=true
