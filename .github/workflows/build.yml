@@ -25,11 +25,6 @@ jobs:
           - recipe-bluefin-dx.yml
           - recipe-bluefin-dx-nvidia.yml
     steps:
-      - name: Maximize build space
-        uses: easimon/maximize-build-space@v10
-        with:
-          root-reserve-mb: 512
-          swap-size-mb: 1024
       - name: Build Custom Image
         uses: blue-build/github-action@v1.8.0
         with:
@@ -38,4 +33,3 @@ jobs:
           registry_token: ${{ github.token }}
           pr_event_number: ${{ github.event.number }}
           maximize_build_space: true
-          rechunk: true
