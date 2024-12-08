@@ -39,7 +39,7 @@ To rebase an existing atomic Fedora installation to the latest build:
 - For mcubi-bluefin:
 
   ```
-  rpm-ostree rebase oostree-image-signed:docker://ghcr.io/tecncr/mcubi-bluefin:latest
+  rpm-ostree rebase ostree-image-signed:docker://ghcr.io/tecncr/mcubi-bluefin:latest
   ```
 
 - For mcubi-bluefin-dx:
