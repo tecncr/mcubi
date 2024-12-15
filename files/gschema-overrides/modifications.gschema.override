@@ -6,8 +6,8 @@ disabled-extensions=['blur-my-shell@aunetx', 'dash-to-dock@micxgx.gmail.com', 'l
 enabled-extensions=['appindicatorsupport@rgcjonas.gmail.com', 'gsconnect@andyholmes.github.io', 'search-light@icedman.github.com', 'clipboard-indicator@tudmotu.com', 'color-picker@tuberry', 'unblank@sun.wxg@gmail.com', 'appmenu-is-back@fthx']
 
 [org.gnome.desktop.background]
-picture-uri='file:///usr/share/backgrounds/solid_black.png'
-picture-uri-dark='file:///usr/share/backgrounds/solid_black.png'
+picture-uri='file:///usr/share/backgrounds/20241215.png'
+picture-uri-dark='file:///usr/share/backgrounds/20241215.png'
 picture-options='zoom'
 primary-color='000000'
 secondary-color='FFFFFF'
