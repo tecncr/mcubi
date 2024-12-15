@@ -13,7 +13,7 @@ primary-color='000000'
 secondary-color='FFFFFF'
 
 [org.gnome.desktop.interface]
-accent-color="slate"
+accent-color="purple"
 clock-format="24h"
 color-scheme="prefer-dark"
 cursor-theme="Yaru"
