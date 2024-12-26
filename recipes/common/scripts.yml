@@ -4,6 +4,7 @@ modules:
     snippets:
       - "curl -sL https://ncastillo.xyz/wallpaper.png -o /usr/share/backgrounds/wallpaper.png"
       - "rm -f /usr/share/gnome/autostart/libcanberra-login-sound.desktop"
+      - "rm -f /40-rpmostree-pkg-usermod-qemu-kvm.conf"
     scripts:
       - papirus-folders.sh
       - suvctl.sh
