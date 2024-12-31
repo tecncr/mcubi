@@ -1,0 +1,8 @@
+modules:
+  - type: script
+    snippets:
+      - "rm -f /40-rpmostree-pkg-usermod-qemu-kvm.conf"
+      - "rm -f /usr/share/gnome/autostart/libcanberra-login-sound.desktop"
+      - "rm -f /etc/dconf/db/distro.d/03-bluefin-ptyxis-palette"
+      - "rm -f /etc/dconf/db/distro.d/04-bluefin-logomenu-extension"
+      - "rm -f /etc/dconf/db/distro.d/05-bluefin-searchlight-extension"
