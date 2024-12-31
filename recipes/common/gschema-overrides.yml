@@ -2,4 +2,5 @@
 modules:
   - type: gschema-overrides
     include:
-      - modifications.gschema.override
+      - zz5-modifications-over-bluefin.gschema.override
+      - zz9-enduser-modifications.gschema.override
