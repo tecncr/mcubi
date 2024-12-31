@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=https://schema.blue-build.org/module-list-v1.json
 modules:
-  - from-file: common/packages.yml
+  - from-file: common/packages-dx.yml
   - from-file: common/fonts.yml
   - from-file: common/files.yml
   - from-file: common/scripts.yml
