@@ -1,7 +1,7 @@
 #-------------- DESKTOP MODIFICATIONS --------------#
 
 [org.gnome.shell]
-favorite-apps = ['org.gnome.Nautilus.desktop', 'org.gnome.Ptyxis', 'org.mozilla.firefox.desktop', 'com.brave.Browser', 'code.desktop', 'org.gnome.TextEditor']
+favorite-apps = ['org.gnome.Nautilus.desktop', 'org.gnome.Ptyxis', 'org.mozilla.firefox.desktop', 'com.brave.Browser', 'code.desktop', 'org.gnome.TextEditor', 'org.virt_manager.virt-manager']
 disabled-extensions=['blur-my-shell@aunetx', 'dash-to-dock@micxgx.gmail.com', 'logomenu@aryan_k', 'tailscale@joaophi.github.com']
 enabled-extensions=['appindicatorsupport@rgcjonas.gmail.com', 'gsconnect@andyholmes.github.io', 'search-light@icedman.github.com', 'clipboard-indicator@tudmotu.com', 'color-picker@tuberry', 'unblank@sun.wxg@gmail.com', 'appmenu-is-back@fthx']
 
@@ -54,7 +54,7 @@ switch-input-source=['<Shift><Super>space']
 switch-input-source-backward=['']
 
 [org.gnome.desktop.peripherals.keyboard]
-numlock-state=true
+numlock-state=false
 
 [org.gnome.shell.extensions.dash-to-dock]
 dock-fixed=true
@@ -98,20 +98,6 @@ keybindings=''
 new-tab=false
 flatpak='off'
 
-[org.gnome.shell.extensions.Logo-menu]
-symbolic-icon=true
-menu-button-icon-image=30
-menu-button-terminal='xdg-terminal-exec'
-menu-button-system-monitor='flatpak run io.missioncenter.MissionCenter'
-menu-button-extensions-app='com.mattjakeman.ExtensionManager.desktop'
-menu-button-software-center='gnome-software'
-show-activities-button=true
-show-lockscreen=false
-show-power-option=false
-show-gamemode=false
-hide-forcequit=true
-show-boxbuddy=true
-
 [org.gnome.shell.extensions.search-light]
 shortcut-search=['<Super>space']
 scale-width=0.10
@@ -120,9 +106,6 @@ border-thickness=1
 border-radius=1.65
 border-color=(0.23, 0.23, 0.23, 1.0)
 background-color=(0.0, 0.0, 0.0, 0.8)
-
-[org.gnome.shell.extensions.blur-my-shell.dash-to-dock]
-blur=false
 
 #-------------- REMAINING SCHEMAS IN THIS SETTING SECTION ARE LOCATED IN DCONF --------------#
 # Settings bellow are supported with gschema override, but other settings, which are relocatable schemas, are not. Edit dconfs if you need to modify relocatable schemas.
