@@ -26,3 +26,7 @@ modules:
       - efivar-libs
       - smartmontools
       - coreos-installer
+    remove:
+      - devpod
+      - input-leap
+      - input-remapper
