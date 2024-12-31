@@ -3,7 +3,7 @@ modules:
   - from-file: common/packages-dx.yml
   - from-file: common/fonts.yml
   - from-file: common/files.yml
-  - from-file: common/scripts.yml
+  - from-file: common/scripts-dx.yml
   - from-file: common/remove-files.yml
   - from-file: common/default-flatpaks.yml
   - from-file: common/gnome-extensions.yml
