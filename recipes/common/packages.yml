@@ -27,5 +27,6 @@ modules:
       - smartmontools
       - coreos-installer
     remove:
+      - gnome-tour
       - input-leap
       - input-remapper

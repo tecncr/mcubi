@@ -28,5 +28,6 @@ modules:
       - coreos-installer
     remove:
       - devpod
+      - gnome-tour
       - input-leap
       - input-remapper
