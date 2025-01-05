@@ -6,6 +6,8 @@ modules:
       install:
         - org.audacityteam.Audacity
         - com.brave.Browser
+        - com.usebruno.Bruno
+        - io.dbeaver.DBeaverCommunity
         - ca.desrt.dconf-editor
         - im.riot.Riot
         - org.gnome.Firmware
