@@ -32,3 +32,5 @@ modules:
       - gnome-tour
       - input-leap
       - input-remapper
+      - solaar
+      - solaar-udev
