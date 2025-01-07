@@ -26,6 +26,7 @@ modules:
       - efivar-libs
       - smartmontools
       - coreos-installer
+      - piper
     remove:
       - devpod
       - gnome-tour
