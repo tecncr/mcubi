@@ -6,16 +6,126 @@ window-height=500
 window-is-maximized=true
 window-width=540
 
+[com.github.stunkymonkey.nautilus-open-any-terminal]
+flatpak='off'
+keybindings=''
+new-tab=false
+terminal='ptyxis'
+
+[org.gnome.Ptyxis.Profiles.2871e8027773ae74d6c87a5f659bbc74]
+custom-command='/usr/bin/fish'
+label='Default'
+login-shell=false
+palette='dracula'
+use-custom-command=true
+
+[org.gnome.Ptyxis]
+audible-bell=false
+default-profile-uuid='2871e8027773ae74d6c87a5f659bbc74'
+interface-style='system'
+profile-uuids=['2871e8027773ae74d6c87a5f659bbc74']
+restore-session=false
+restore-window-size=false
+window-size=(uint32 104, uint32 30)
+
+[org.gnome.desktop.app-folders]
+folder-children=['Games', 'GamingUtilities', 'Utilities', 'Containers', 'Wine', 'YaST', 'Pardus', 'Development', 'Productivity']
+
+[org.gnome.desktop.background]
+picture-options='zoom'
+picture-uri='file:///usr/share/backgrounds/20241215.png'
+picture-uri-dark='file:///usr/share/backgrounds/20241215.png'
+primary-color='000000'
+secondary-color='FFFFFF'
+
+[org.gnome.desktop.interface]
+accent-color='purple'
+clock-format='24h'
+clock-show-weekday=true
+color-scheme='prefer-dark'
+cursor-theme='Yaru'
+document-font-name='Cantarell 12'
+enable-hot-corners=true
+font-antialiasing='rgba'
+font-hinting='none'
+font-name='Fira Sans 11.5'
+gtk-enable-primary-paste=false
+gtk-theme='adw-gtk3-dark'
+icon-theme='Papirus-Dark'
+monospace-font-name='FiraCode Nerd Font Mono 12'
+show-battery-percentage=true
+
+[org.gnome.desktop.peripherals.keyboard]
+numlock-state=false
+
+[org.gnome.desktop.privacy]
+old-files-age=uint32 30
+recent-files-max-age=-1
+remember-recent-files=false
+report-technical-problems=false
+
+[org.gnome.desktop.sound]
+allow-volume-above-100-percent=false
+theme-name='Yaru'
+
+[org.gnome.desktop.wm.keybindings]
+show-desktop=['<Super>d']
+switch-applications=['<Super>Tab']
+switch-applications-backward=['<Shift><Super>Tab']
+switch-input-source=['<Shift><Super>space']
+switch-input-source-backward=['']
+switch-windows=['<Alt>Tab']
+switch-windows-backward=['<Shift><Alt>Tab']
+
+[org.gnome.desktop.wm.preferences]
+button-layout=':minimize,maximize,close'
+num-workspaces=1
+titlebar-font='Fira Sans Bold 12'
+
+[org/gnome/evolution-data-server]
+migrated=true
+
+[org.gnome.mutter]
+check-alive-timeout=uint32 20000
+experimental-features=['scale-monitor-framebuffer', 'xwayland-native-scaling']
+
+[org.gnome.settings-daemon.plugins.media-keys]
+custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4/']
+home=['<Super>e']
+
+[org.gnome.settings-daemon.plugins.power]
+idle-dim=false
+power-saver-profile-on-low-battery=false
+sleep-inactive-ac-type='nothing'
+sleep-inactive-battery-type='nothing'
+
+[org.gnome.shell]
+disabled-extensions=['blur-my-shell@aunetx', 'dash-to-dock@micxgx.gmail.com', 'logomenu@aryan_k', 'tailscale@joaophi.github.com']
+enabled-extensions=['appindicatorsupport@rgcjonas.gmail.com', 'gsconnect@andyholmes.github.io', 'search-light@icedman.github.com', 'clipboard-indicator@tudmotu.com', 'color-picker@tuberry', 'unblank@sun.wxg@gmail.com', 'appmenu-is-back@fthx']
+favorite-apps=['org.gnome.Nautilus.desktop', 'org.gnome.Ptyxis', 'org.mozilla.firefox.desktop', 'com.brave.Browser', 'code.desktop', 'org.gnome.TextEditor', 'org.virt_manager.virt-manager']
+
+[org.gnome.software]
+allow-updates=false
+download-updates=false
+download-updates-notify=false
+
+[org.gtk.Settings.FileChooser]
+sort-directories-first=true
+
+[org.gtk.gtk4.Settings.FileChooser]
+sort-directories-first=true
+
 [org/fedoraproject/FirewallConfig]
 show-active-bindings=true
 show-ipsets=true
 
 [org/gnome/Ptyxis]
+cursor-shape='block'
 default-columns=uint32 90
 default-rows=uint32 24
 font-name='FiraCode Nerd Font Mono 12'
 use-system-font=false
-window-size=(uint32 90, uint32 24)
+window-size=(uint32 134, uint32 35)
 
 [org/gnome/Ptyxis/Profiles/2871e8027773ae74d6c87a5f659bbc74]
 custom-command='/usr/bin/fish'
@@ -24,7 +134,7 @@ palette='dracula'
 use-custom-command=true
 
 [org/gnome/control-center]
-last-panel='wifi'
+last-panel='system'
 window-state=(980, 640, true)
 
 [org/gnome/desktop/app-folders]
@@ -46,7 +156,7 @@ name='LibreOffice'
 translate=false
 
 [org/gnome/desktop/app-folders/folders/93d21bf1-d963-48fd-834c-113c81ca863e]
-apps=['org.signal.Signal.desktop', 'im.riot.Riot.desktop']
+apps=['org.signal.Signal.desktop', 'im.riot.Riot.desktop', 'com.brave.Browser.flextop.brave-majiogicmcnmdhhlgmkahaleckhjbmlk-Default.desktop']
 name='Messaging'
 translate=false
 
@@ -99,12 +209,12 @@ name='Media'
 translate=false
 
 [org/gnome/desktop/app-folders/folders/d0ec232b-d2a9-4e30-a889-ff79cc47dfed]
-apps=['org.gnome.Settings.desktop', 'org.gnome.tweaks.desktop', 'org.gnome.DiskUtility.desktop', 'com.mattjakeman.ExtensionManager.desktop', 'io.missioncenter.MissionCenter.desktop', 'com.github.tchx84.Flatseal.desktop', 'ca.desrt.dconf-editor.desktop', 'firewall-config.desktop', 'org.gnome.Logs.desktop', 'io.github.flattool.Warehouse.desktop', 'org.gnome.Firmware.desktop', 'org.gnome.DejaDup.desktop', 'org.gnome.World.PikaBackup.desktop', 'system-update.desktop', 'io.github.input_leap.InputLeap.desktop', 'solaar.desktop', 'org.gnome.baobab.desktop', 'input-remapper-gtk.desktop', 'org.gnome.Sysprof.desktop']
+apps=['org.gnome.Settings.desktop', 'org.gnome.tweaks.desktop', 'org.gnome.DiskUtility.desktop', 'com.mattjakeman.ExtensionManager.desktop', 'io.missioncenter.MissionCenter.desktop', 'com.github.tchx84.Flatseal.desktop', 'ca.desrt.dconf-editor.desktop', 'firewall-config.desktop', 'org.gnome.Logs.desktop', 'io.github.flattool.Warehouse.desktop', 'org.gnome.Firmware.desktop', 'org.gnome.DejaDup.desktop', 'org.gnome.World.PikaBackup.desktop', 'system-update.desktop', 'org.gnome.baobab.desktop', 'org.freedesktop.Piper.desktop', 'nvidia-settings.desktop', 'org.gnome.Sysprof.desktop']
 name='System'
 translate=false
 
 [org/gnome/desktop/app-folders/folders/ee64d17e-fc25-40f4-820a-3f8ea6c52fb3]
-apps=['org.gnome.Contacts.desktop', 'org.gnome.Calendar.desktop', 'org.gnome.clocks.desktop', 'simple-scan.desktop', 'org.gnome.Calculator.desktop', 'org.gnome.FileRoller.desktop', 'org.gnome.Loupe.desktop', 'org.gnome.Snapshot.desktop', 'org.gnome.Papers.desktop', 'org.gnome.Characters.desktop', 'org.gnome.font-viewer.desktop', 'yelp.desktop', 'org.gnome.Tour.desktop', 'Discourse.desktop', 'documentation.desktop', 'org.gnome.Software.desktop', 'org.fedoraproject.MediaWriter.desktop']
+apps=['org.gnome.Contacts.desktop', 'org.gnome.Calendar.desktop', 'org.gnome.clocks.desktop', 'simple-scan.desktop', 'org.gnome.Calculator.desktop', 'org.gnome.FileRoller.desktop', 'org.gnome.Loupe.desktop', 'org.gnome.Snapshot.desktop', 'org.gnome.Papers.desktop', 'org.gnome.Characters.desktop', 'org.gnome.font-viewer.desktop', 'yelp.desktop', 'org.gnome.Tour.desktop', 'Discourse.desktop', 'documentation.desktop', 'org.gnome.Software.desktop', 'org.fedoraproject.MediaWriter.desktop', 'org.mozilla.Thunderbird.desktop']
 name='Accesories'
 translate=false
 
@@ -141,6 +251,18 @@ application-children=['org-gnome-ptyxis', 'org-mozilla-firefox', 'org-signal-sig
 [org/gnome/desktop/notifications/application/com-github-unrud-videodownloader]
 application-id='com.github.unrud.VideoDownloader.desktop'
 
+[org/gnome/desktop/notifications/application/com-valvesoftware-steam]
+application-id='com.valvesoftware.Steam.desktop'
+
+[org/gnome/desktop/notifications/application/im-riot-riot]
+application-id='im.riot.Riot.desktop'
+
+[org/gnome/desktop/notifications/application/jetbrains-toolbox]
+application-id='jetbrains-toolbox.desktop'
+
+[org/gnome/desktop/notifications/application/org-audacityteam-audacity]
+application-id='org.audacityteam.Audacity.desktop'
+
 [org/gnome/desktop/notifications/application/org-gnome-nautilus]
 application-id='org.gnome.Nautilus.desktop'
 
@@ -149,6 +271,9 @@ application-id='org.gnome.Ptyxis.desktop'
 
 [org/gnome/desktop/notifications/application/org-gnome-settings]
 application-id='org.gnome.Settings.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-texteditor]
+application-id='org.gnome.TextEditor.desktop'
 
 [org/gnome/desktop/notifications/application/org-mozilla-firefox]
 application-id='org.mozilla.firefox.desktop'
@@ -181,12 +306,6 @@ idle-delay=uint32 0
 allow-volume-above-100-percent=false
 theme-name='Yaru'
 
-[org/gnome/desktop/wm/preferences]
-num-workspaces=1
-
-[org/gnome/evolution-data-server]
-migrated=true
-
 [org/gnome/login-screen]
 enable-fingerprint-authentication=true
 enable-smartcard-authentication=false
@@ -200,20 +319,6 @@ workspaces-only-on-primary=false
 default-folder-viewer='icon-view'
 migrated-gtk-settings=true
 search-filter-time-type='last_modified'
-
-[org/gnome/nautilus/window-state]
-initial-size=(890, 550)
-initial-size-file-chooser=(890, 550)
-maximized=true
-
-[org/gnome/portal/filechooser/org.gnome.Settings]
-last-folder-path='/var/home/tecncr/Documents'
-
-[org/gnome/portal/filechooser/org.gnome.TextEditor]
-last-folder-path='/var/home/tecncr/Documents'
-
-[org/gnome/portal/filechooser/org.mozilla.firefox]
-last-folder-path='/var/home/tecncr/Downloads'
 
 [org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0]
 binding='<Control><Alt>t'
@@ -237,57 +342,12 @@ sleep-inactive-ac-type='nothing'
 sleep-inactive-battery-type='nothing'
 
 [org/gnome/shell]
-app-picker-layout=[{'ee64d17e-fc25-40f4-820a-3f8ea6c52fb3': <{'position': <0>}>, 'Games': <{'position': <1>}>, '51e578b7-1bce-4ee2-a12d-6e1025ea2cff': <{'position': <2>}>, 'bc788aed-4aea-46bd-a398-79e0d3620fc5': <{'position': <3>}>, '93d21bf1-d963-48fd-834c-113c81ca863e': <{'position': <4>}>, '0f1d9304-421f-4c5d-a7d3-f49481993089': <{'position': <5>}>, 'd0ec232b-d2a9-4e30-a889-ff79cc47dfed': <{'position': <6>}>, '2c2dfc92-7b10-4504-aa01-d87c9ee16336': <{'position': <7>}>, 'Containers': <{'position': <8>}>}]
+app-picker-layout=[{'ee64d17e-fc25-40f4-820a-3f8ea6c52fb3': <{'position': <0>}>, 'Games': <{'position': <1>}>, '51e578b7-1bce-4ee2-a12d-6e1025ea2cff': <{'position': <2>}>, 'bc788aed-4aea-46bd-a398-79e0d3620fc5': <{'position': <3>}>, '93d21bf1-d963-48fd-834c-113c81ca863e': <{'position': <4>}>, '0f1d9304-421f-4c5d-a7d3-f49481993089': <{'position': <5>}>, 'd0ec232b-d2a9-4e30-a889-ff79cc47dfed': <{'position': <6>}>, '2c2dfc92-7b10-4504-aa01-d87c9ee16336': <{'position': <7>}>, 'Development': <{'position': <8>}>}]
 disabled-extensions=['tailscale@joaophi.github.com', 'dash-to-dock@micxgx.gmail.com']
 enabled-extensions=['appindicatorsupport@rgcjonas.gmail.com', 'blur-my-shell@aunetx', 'gsconnect@andyholmes.github.io', 'logomenu@aryan_k', 'search-light@icedman.github.com', 'appmenu-is-back@fthx', 'unblank@sun.wxg@gmail.com', 'clipboard-indicator@tudmotu.com', 'color-picker@tuberry']
 favorite-apps=['org.gnome.Nautilus.desktop', 'org.gnome.Ptyxis.desktop', 'org.mozilla.firefox.desktop', 'com.brave.Browser.desktop', 'code.desktop', 'org.gnome.TextEditor.desktop', 'virt-manager.desktop']
 last-selected-power-profile='performance'
 welcome-dialog-last-shown-version='47.2'
-
-[org/gnome/shell/extensions/Logo-menu]
-hide-forcequit=true
-menu-button-extensions-app='com.mattjakeman.ExtensionManager.desktop'
-menu-button-icon-image=30
-menu-button-software-center='gnome-software'
-menu-button-system-monitor='flatpak run io.missioncenter.MissionCenter'
-menu-button-terminal='xdg-terminal-exec'
-show-activities-button=true
-show-boxbuddy=true
-show-gamemode=false
-show-lockscreen=false
-show-power-option=false
-symbolic-icon=true
-
-[org/gnome/shell/extensions/blur-my-shell]
-settings-version=2
-
-[org/gnome/shell/extensions/blur-my-shell/appfolder]
-brightness=0.59999999999999998
-sigma=30
-
-[org/gnome/shell/extensions/blur-my-shell/dash-to-dock]
-blur=true
-brightness=0.59999999999999998
-sigma=30
-static-blur=true
-style-dash-to-dock=0
-
-[org/gnome/shell/extensions/blur-my-shell/panel]
-brightness=0.59999999999999998
-sigma=30
-
-[org/gnome/shell/extensions/blur-my-shell/window-list]
-brightness=0.59999999999999998
-sigma=30
-
-[org/gnome/shell/extensions/search-light]
-background-color=(0.0, 0.0, 0.0, 0.80000000000000004)
-border-color=(0.23000000000000001, 0.23000000000000001, 0.23000000000000001, 1.0)
-border-radius=1.6499999999999999
-border-thickness=1
-scale-height=0.14999999999999999
-scale-width=0.10000000000000001
-shortcut-search=['<Super>space']
 
 [org/gnome/shell/extensions/unblank]
 power=false
@@ -308,15 +368,3 @@ sort-directories-first=true
 
 [org/gtk/settings/file-chooser]
 clock-format='24h'
-
-[org/virt-manager/virt-manager]
-manager-window-height=550
-manager-window-width=550
-
-[org/virt-manager/virt-manager/connections]
-autoconnect=['qemu:///system']
-uris=['qemu:///system']
-
-[org/virt-manager/virt-manager/vmlist-fields]
-disk-usage=false
-network-traffic=false
