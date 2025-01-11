@@ -30,4 +30,5 @@ modules:
       remove:
         - org.gnome.Weather
         - org.gnome.Maps
+        - org.gnome.Connections
         - com.github.rafostar.Clapper
