@@ -22,6 +22,8 @@ modules:
       - telnet
       - nmap
       - netcat
+      - screen
+      - picocom
       - efivar
       - efivar-libs
       - smartmontools
