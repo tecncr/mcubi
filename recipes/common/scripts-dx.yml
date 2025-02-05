@@ -1,8 +1,6 @@
 # yaml-language-server: $schema=https://schema.blue-build.org/module-list-v1.json
 modules:
   - type: script
-    snippets:
-      - "mv /40-rpmostree-pkg-usermod-qemu-kvm.conf /tmp"
     scripts:
       - papirus-folders.sh
       - suvctl.sh
