@@ -30,6 +30,9 @@ modules:
       - coreos-installer
       - piper
       - pmbootstrap
+      - https://vault.bitwarden.com/download/?app=desktop&platform=linux&variant=rpm
+    optfix:
+      - Bitwarden
     remove:
       - gnome-tour
       - input-leap
