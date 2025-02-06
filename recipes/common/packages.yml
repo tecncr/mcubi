@@ -29,6 +29,7 @@ modules:
       - smartmontools
       - coreos-installer
       - piper
+      - pmbootstrap
     remove:
       - gnome-tour
       - input-leap
