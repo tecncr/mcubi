@@ -19,6 +19,8 @@ modules:
       - usbguard-dbus
       - usbguard-tools
       - usbguard-selinux
+      - tftp
+      - tftp-server
       - telnet
       - nmap
       - netcat
