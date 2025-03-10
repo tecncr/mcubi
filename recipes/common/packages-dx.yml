@@ -1,15 +1,7 @@
 # yaml-language-server: $schema=https://schema.blue-build.org/module-list-v1.json
 modules:
   - type: rpm-ostree
-    repos:
-      - https://negativo17.org/repos/fedora-multimedia.repo
-  - type: akmods
-    base: main
     install:
-      - evdi
-  - type: rpm-ostree
-    install:
-      - displaylink
       - mozilla-fira-sans-fonts
       - papirus-icon-theme
       - papirus-icon-theme-light
