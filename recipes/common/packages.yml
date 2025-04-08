@@ -4,7 +4,7 @@ modules:
     repos:
       - https://negativo17.org/repos/fedora-multimedia.repo
   - type: akmods
-    base: main
+    base: bazzite
     install:
       - evdi
   - type: rpm-ostree
