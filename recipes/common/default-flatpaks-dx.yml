@@ -32,3 +32,6 @@ modules:
         - org.gnome.Maps
         - org.gnome.Connections
         - com.github.rafostar.Clapper
+        - io.github.pwr_solaar.solaar
+        - me.iepure.devtoolbox
+        - sh.loft.Devpod
