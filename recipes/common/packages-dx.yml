@@ -32,5 +32,3 @@ modules:
       - devpod
       - gnome-tour
       - input-remapper
-      - solaar
-      - solaar-udev

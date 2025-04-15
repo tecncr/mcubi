@@ -31,5 +31,4 @@ modules:
     remove:
       - gnome-tour
       - input-remapper
-      - solaar
-      - solaar-udev
+
