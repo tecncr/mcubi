@@ -2,6 +2,6 @@
 name: mcubi-bluefin-dx
 description: A custom bluefin-dx image by @tecncr
 base-image: ghcr.io/ublue-os/bluefin-dx
-image-version: latest
+image-version: 41
 modules:
   - from-file: common/bluefin-dx.yml

@@ -2,6 +2,6 @@
 name: mcubi-bluefin
 description: A custom bluefin image by @tecncr
 base-image: ghcr.io/ublue-os/bluefin
-image-version: latest
+image-version: 41
 modules:
   - from-file: common/bluefin.yml
