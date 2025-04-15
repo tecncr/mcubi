@@ -31,7 +31,6 @@ modules:
     remove:
       - devpod
       - gnome-tour
-      - input-leap
       - input-remapper
       - solaar
       - solaar-udev
