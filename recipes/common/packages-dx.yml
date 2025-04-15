@@ -29,6 +29,5 @@ modules:
     optfix:
       - Bitwarden
     remove:
-      - devpod
       - gnome-tour
       - input-remapper
