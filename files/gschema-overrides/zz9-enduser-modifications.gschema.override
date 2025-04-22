@@ -82,9 +82,6 @@ button-layout=':minimize,maximize,close'
 num-workspaces=1
 titlebar-font='Fira Sans Bold 12'
 
-[org/gnome/evolution-data-server]
-migrated=true
-
 [org.gnome.mutter]
 check-alive-timeout=uint32 20000
 experimental-features=['scale-monitor-framebuffer', 'xwayland-native-scaling']
@@ -125,7 +122,7 @@ default-columns=uint32 90
 default-rows=uint32 24
 font-name='FiraCode Nerd Font Mono 12'
 use-system-font=false
-window-size=(uint32 134, uint32 35)
+window-size=(uint32 90, uint32 24)
 
 [org/gnome/Ptyxis/Profiles/2871e8027773ae74d6c87a5f659bbc74]
 custom-command='/usr/bin/fish'
@@ -138,7 +135,7 @@ last-panel='system'
 window-state=(980, 640, true)
 
 [org/gnome/desktop/app-folders]
-folder-children=['Games', 'GamingUtilities', 'Utilities', 'Containers', 'Wine', 'YaST', 'Pardus', 'Development', 'ee64d17e-fc25-40f4-820a-3f8ea6c52fb3', 'd0ec232b-d2a9-4e30-a889-ff79cc47dfed', '0f1d9304-421f-4c5d-a7d3-f49481993089', '2c2dfc92-7b10-4504-aa01-d87c9ee16336', '51e578b7-1bce-4ee2-a12d-6e1025ea2cff', 'bc788aed-4aea-46bd-a398-79e0d3620fc5', '93d21bf1-d963-48fd-834c-113c81ca863e']
+folder-children=['GamingUtilities', 'Utilities', 'Containers', 'Wine', 'YaST', 'Pardus', 'Development', 'ee64d17e-fc25-40f4-820a-3f8ea6c52fb3', 'd0ec232b-d2a9-4e30-a889-ff79cc47dfed', '0f1d9304-421f-4c5d-a7d3-f49481993089', '2c2dfc92-7b10-4504-aa01-d87c9ee16336', '51e578b7-1bce-4ee2-a12d-6e1025ea2cff', 'bc788aed-4aea-46bd-a398-79e0d3620fc5', '93d21bf1-d963-48fd-834c-113c81ca863e', 'ed02c9f5-d0d6-4cf8-97cc-acf42c23372d', '368b3f7f-487a-4d93-a9c5-256cdbfa9842']
 
 [org/gnome/desktop/app-folders/folders/0f1d9304-421f-4c5d-a7d3-f49481993089]
 apps=['remote-viewer.desktop', 'org.remmina.Remmina.desktop']
@@ -146,9 +143,13 @@ name='Remote Access'
 translate=false
 
 [org/gnome/desktop/app-folders/folders/2c2dfc92-7b10-4504-aa01-d87c9ee16336]
-apps=['org.raspberrypi.rpi-imager.desktop', 'com.usebruno.Bruno.desktop', 'io.podman_desktop.PodmanDesktop.desktop', 'io.github.dvlv.boxbuddyrs.desktop', 'io.dbeaver.DBeaverCommunity.desktop', 'DevPod.desktop']
+apps=['org.raspberrypi.rpi-imager.desktop', 'com.usebruno.Bruno.desktop', 'io.podman_desktop.PodmanDesktop.desktop', 'io.github.dvlv.boxbuddyrs.desktop', 'io.dbeaver.DBeaverCommunity.desktop', 'DevPod.desktop', 'org.gnome.Builder.desktop', 'com.getpostman.Postman.desktop']
 name='Tools'
 translate=false
+
+[org/gnome/desktop/app-folders/folders/368b3f7f-487a-4d93-a9c5-256cdbfa9842]
+apps=['com.valvesoftware.Steam.desktop', 'org.prismlauncher.PrismLauncher.desktop', 'net.supertuxkart.SuperTuxKart.desktop']
+name='Games'
 
 [org/gnome/desktop/app-folders/folders/51e578b7-1bce-4ee2-a12d-6e1025ea2cff]
 apps=['org.libreoffice.LibreOffice.writer.desktop', 'org.libreoffice.LibreOffice.impress.desktop', 'org.libreoffice.LibreOffice.calc.desktop', 'org.libreoffice.LibreOffice.draw.desktop', 'org.libreoffice.LibreOffice.base.desktop', 'org.libreoffice.LibreOffice.math.desktop', 'org.libreoffice.LibreOffice.desktop']
@@ -170,7 +171,7 @@ translate=false
 [org/gnome/desktop/app-folders/folders/Development]
 apps=['dev-pod.desktop', 'code.desktop']
 categories=['Development', 'IDE']
-excluded-apps=['org.gnome.Sysprof.desktop', 'virt-manager.desktop', 'io.podman_desktop.PodmanDesktop.desktop', 'DevPod.desktop', 'com.usebruno.Bruno.desktop', 'io.dbeaver.DBeaverCommunity.desktop']
+excluded-apps=['org.gnome.Sysprof.desktop', 'virt-manager.desktop', 'io.podman_desktop.PodmanDesktop.desktop', 'DevPod.desktop', 'com.usebruno.Bruno.desktop', 'io.dbeaver.DBeaverCommunity.desktop', 'org.gnome.Builder.desktop', 'jetbrains-toolbox.desktop', 'jetbrains-idea-737ce166-1eb7-4e78-8aac-79ffba84681b.desktop', 'jetbrains-datagrip-635f0743-3776-428c-8ad4-355edf280317.desktop', 'com.getpostman.Postman.desktop']
 name='Development'
 translate=false
 
@@ -213,8 +214,13 @@ apps=['org.gnome.Settings.desktop', 'org.gnome.tweaks.desktop', 'org.gnome.DiskU
 name='System'
 translate=false
 
+[org/gnome/desktop/app-folders/folders/ed02c9f5-d0d6-4cf8-97cc-acf42c23372d]
+apps=['jetbrains-toolbox.desktop', 'jetbrains-idea-737ce166-1eb7-4e78-8aac-79ffba84681b.desktop', 'jetbrains-datagrip-635f0743-3776-428c-8ad4-355edf280317.desktop']
+name='JetBrains'
+translate=false
+
 [org/gnome/desktop/app-folders/folders/ee64d17e-fc25-40f4-820a-3f8ea6c52fb3]
-apps=['org.gnome.Contacts.desktop', 'org.gnome.Calendar.desktop', 'org.gnome.clocks.desktop', 'simple-scan.desktop', 'org.gnome.Calculator.desktop', 'org.gnome.FileRoller.desktop', 'org.gnome.Loupe.desktop', 'org.gnome.Snapshot.desktop', 'org.gnome.Papers.desktop', 'org.gnome.Characters.desktop', 'org.gnome.font-viewer.desktop', 'yelp.desktop', 'org.gnome.Tour.desktop', 'Discourse.desktop', 'documentation.desktop', 'org.gnome.Software.desktop', 'org.fedoraproject.MediaWriter.desktop', 'org.mozilla.Thunderbird.desktop']
+apps=['org.gnome.Contacts.desktop', 'org.gnome.Calendar.desktop', 'org.gnome.clocks.desktop', 'simple-scan.desktop', 'org.gnome.Calculator.desktop', 'org.gnome.FileRoller.desktop', 'org.gnome.Loupe.desktop', 'org.gnome.Snapshot.desktop', 'org.gnome.Papers.desktop', 'org.gnome.Characters.desktop', 'org.gnome.font-viewer.desktop', 'yelp.desktop', 'org.gnome.Tour.desktop', 'Discourse.desktop', 'documentation.desktop', 'org.gnome.Software.desktop', 'org.fedoraproject.MediaWriter.desktop', 'org.mozilla.Thunderbird.desktop', 'discourse.desktop', 'com.github.junrrein.PDFSlicer.desktop']
 name='Accesories'
 translate=false
 
@@ -246,22 +252,53 @@ monospace-font-name='FiraCode Nerd Font Mono 12'
 show-battery-percentage=true
 
 [org/gnome/desktop/notifications]
-application-children=['org-gnome-ptyxis', 'org-mozilla-firefox', 'org-signal-signal', 'com-github-unrud-videodownloader', 'org-gnome-nautilus', 'org-gnome-settings']
+application-children=['org-gnome-ptyxis', 'org-mozilla-firefox', 'org-signal-signal', 'com-github-unrud-videodownloader', 'org-gnome-nautilus', 'org-gnome-settings', 'gnome-power-panel', 'fr-handbrake-ghb', 'com-valvesoftware-steam', 'org-gnome-texteditor', 'org-gnome-baobab', 'org-kde-kdenlive', 'org-gimp-gimp', 'com-usebruno-bruno', 'jetbrains-toolbox', 'gnome-datetime-panel', 'com-mattjakeman-extensionmanager', 'com-brave-browser-flextop-brave-majiogicmcnmdhhlgmkahaleckhjbmlk-default', 'im-riot-riot', 'com-brave-browser', 'org-gnome-shell-extensions-gsconnect', 'org-gnome-clocks']
+show-banners=true
+
+[org/gnome/desktop/notifications/application/com-brave-browser]
+application-id='com.brave.Browser.desktop'
 
 [org/gnome/desktop/notifications/application/com-github-unrud-videodownloader]
 application-id='com.github.unrud.VideoDownloader.desktop'
 
+[org/gnome/desktop/notifications/application/com-mattjakeman-extensionmanager]
+application-id='com.mattjakeman.ExtensionManager.desktop'
+
+[org/gnome/desktop/notifications/application/com-usebruno-bruno]
+application-id='com.usebruno.Bruno.desktop'
+
 [org/gnome/desktop/notifications/application/com-valvesoftware-steam]
 application-id='com.valvesoftware.Steam.desktop'
 
+[org/gnome/desktop/notifications/application/fr-handbrake-ghb]
+application-id='fr.handbrake.ghb.desktop'
+
+[org/gnome/desktop/notifications/application/gnome-datetime-panel]
+application-id='gnome-datetime-panel.desktop'
+
+[org/gnome/desktop/notifications/application/gnome-power-panel]
+application-id='gnome-power-panel.desktop'
+
 [org/gnome/desktop/notifications/application/im-riot-riot]
 application-id='im.riot.Riot.desktop'
+
+[org/gnome/desktop/notifications/application/io-dbeaver-dbeavercommunity]
+application-id='io.dbeaver.DBeaverCommunity.desktop'
 
 [org/gnome/desktop/notifications/application/jetbrains-toolbox]
 application-id='jetbrains-toolbox.desktop'
 
 [org/gnome/desktop/notifications/application/org-audacityteam-audacity]
 application-id='org.audacityteam.Audacity.desktop'
+
+[org/gnome/desktop/notifications/application/org-gimp-gimp]
+application-id='org.gimp.GIMP.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-baobab]
+application-id='org.gnome.baobab.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-clocks]
+application-id='org.gnome.clocks.desktop'
 
 [org/gnome/desktop/notifications/application/org-gnome-nautilus]
 application-id='org.gnome.Nautilus.desktop'
@@ -272,8 +309,14 @@ application-id='org.gnome.Ptyxis.desktop'
 [org/gnome/desktop/notifications/application/org-gnome-settings]
 application-id='org.gnome.Settings.desktop'
 
+[org/gnome/desktop/notifications/application/org-gnome-shell-extensions-gsconnect]
+application-id='org.gnome.Shell.Extensions.GSConnect.desktop'
+
 [org/gnome/desktop/notifications/application/org-gnome-texteditor]
 application-id='org.gnome.TextEditor.desktop'
+
+[org/gnome/desktop/notifications/application/org-kde-kdenlive]
+application-id='org.kde.kdenlive.desktop'
 
 [org/gnome/desktop/notifications/application/org-mozilla-firefox]
 application-id='org.mozilla.firefox.desktop'
@@ -306,6 +349,9 @@ idle-delay=uint32 0
 allow-volume-above-100-percent=false
 theme-name='Yaru'
 
+[org/gnome/desktop/wm/preferences]
+num-workspaces=1
+
 [org/gnome/login-screen]
 enable-fingerprint-authentication=true
 enable-smartcard-authentication=false
@@ -314,6 +360,9 @@ enable-smartcard-authentication=false
 center-new-windows=true
 dynamic-workspaces=false
 workspaces-only-on-primary=false
+
+[org/gnome/nautilus/icon-view]
+default-zoom-level='medium'
 
 [org/gnome/nautilus/preferences]
 default-folder-viewer='icon-view'
@@ -342,10 +391,10 @@ sleep-inactive-ac-type='nothing'
 sleep-inactive-battery-type='nothing'
 
 [org/gnome/shell]
-app-picker-layout=[{'ee64d17e-fc25-40f4-820a-3f8ea6c52fb3': <{'position': <0>}>, 'Games': <{'position': <1>}>, '51e578b7-1bce-4ee2-a12d-6e1025ea2cff': <{'position': <2>}>, 'bc788aed-4aea-46bd-a398-79e0d3620fc5': <{'position': <3>}>, '93d21bf1-d963-48fd-834c-113c81ca863e': <{'position': <4>}>, '0f1d9304-421f-4c5d-a7d3-f49481993089': <{'position': <5>}>, 'd0ec232b-d2a9-4e30-a889-ff79cc47dfed': <{'position': <6>}>, '2c2dfc92-7b10-4504-aa01-d87c9ee16336': <{'position': <7>}>, 'Development': <{'position': <8>}>}]
-disabled-extensions=['tailscale@joaophi.github.com', 'dash-to-dock@micxgx.gmail.com']
+app-picker-layout=[{'ee64d17e-fc25-40f4-820a-3f8ea6c52fb3': <{'position': <0>}>, '368b3f7f-487a-4d93-a9c5-256cdbfa9842': <{'position': <1>}>, '51e578b7-1bce-4ee2-a12d-6e1025ea2cff': <{'position': <2>}>, 'bc788aed-4aea-46bd-a398-79e0d3620fc5': <{'position': <3>}>, '93d21bf1-d963-48fd-834c-113c81ca863e': <{'position': <4>}>, '0f1d9304-421f-4c5d-a7d3-f49481993089': <{'position': <5>}>, 'd0ec232b-d2a9-4e30-a889-ff79cc47dfed': <{'position': <6>}>, '2c2dfc92-7b10-4504-aa01-d87c9ee16336': <{'position': <7>}>, 'ed02c9f5-d0d6-4cf8-97cc-acf42c23372d': <{'position': <8>}>}]
+disabled-extensions=['dash-to-dock@micxgx.gmail.com', 'tailscale@joaophi.github.com']
 enabled-extensions=['appindicatorsupport@rgcjonas.gmail.com', 'blur-my-shell@aunetx', 'gsconnect@andyholmes.github.io', 'logomenu@aryan_k', 'search-light@icedman.github.com', 'appmenu-is-back@fthx', 'unblank@sun.wxg@gmail.com', 'clipboard-indicator@tudmotu.com', 'color-picker@tuberry']
-favorite-apps=['org.gnome.Nautilus.desktop', 'org.gnome.Ptyxis.desktop', 'org.mozilla.firefox.desktop', 'com.brave.Browser.desktop', 'code.desktop', 'org.gnome.TextEditor.desktop', 'virt-manager.desktop']
+favorite-apps=['org.gnome.Nautilus.desktop', 'org.gnome.Ptyxis.desktop', 'bitwarden.desktop', 'org.mozilla.firefox.desktop', 'com.brave.Browser.desktop', 'code.desktop', 'org.gnome.TextEditor.desktop', 'virt-manager.desktop']
 last-selected-power-profile='performance'
 welcome-dialog-last-shown-version='47.2'
 
@@ -368,3 +417,12 @@ sort-directories-first=true
 
 [org/gtk/settings/file-chooser]
 clock-format='24h'
+date-format='regular'
+location-mode='path-bar'
+show-hidden=false
+show-size-column=true
+show-type-column=true
+sort-column='name'
+sort-directories-first=true
+sort-order='ascending'
+type-format='category'
